@@ -33,8 +33,7 @@ import {
 } from './components/CuttingEdgeFeatures';
 
 // Import assets
-import logoImage from './assets/tim_harmar_logo_updated.png';
-import heroBackground from './assets/hero_background.png';
+// logoImage and heroBackground are now served from the public directory
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -130,7 +129,7 @@ const App = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <img src={logoImage} alt="Tim Harmar Legal" className="h-10 w-auto" />
+              <img src="/tim_harmar_logo_updated.png" alt="Tim Harmar Legal" className="h-10 w-auto" />
             </div>
             
             {/* Desktop Navigation */}
@@ -193,7 +192,7 @@ const App = () => {
       <section id="home" className="relative min-h-screen flex items-center">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroBackground})` }}
+          style={{ backgroundImage: "url('/hero_background.png')" }}
         >
           <div className="absolute inset-0 bg-blue-900/80"></div>
         </div>
@@ -596,7 +595,7 @@ const App = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <img src={logoImage} alt="Tim Harmar Legal" className="h-12 w-auto mb-4 filter brightness-0 invert" />
+              <img src="/tim_harmar_logo_updated.png" alt="Tim Harmar Legal" className="h-12 w-auto mb-4 filter brightness-0 invert" />
               <p className="text-gray-400">
                 Strategic legal and consulting solutions for complex challenges.
               </p>
