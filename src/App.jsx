@@ -24,14 +24,13 @@ import {
 import './App.css';
 
 // Import cutting-edge components
-import CuttingEdgeFeatures from './components/CuttingEdgeFeatures';
-const {
+import {
   AILegalAssistant,
   SmartScheduler,
   DocumentGenerator,
   LegalNewsFeed,
   LegalAssessment
-} = CuttingEdgeFeatures;
+} from './components/CuttingEdgeFeatures';
 
 // Import assets
 import logoImage from './assets/tim_harmar_logo_updated.png';
