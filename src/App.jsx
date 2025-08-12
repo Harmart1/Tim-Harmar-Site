@@ -23,15 +23,6 @@ import {
 } from 'lucide-react';
 import './App.css';
 
-// Import cutting-edge components
-import {
-  AILegalAssistant,
-  SmartScheduler,
-  DocumentGenerator,
-  LegalNewsFeed,
-  LegalAssessment
-} from './components/CuttingEdgeFeatures';
-
 // Import assets
 import logoImage from './assets/tim_harmar_logo_updated.png';
 import heroBackground from './assets/hero_background.png';
@@ -341,118 +332,6 @@ const App = () => {
         </div>
       </section>
 
-      {/* Cutting-Edge Features Section */}
-      <section className="py-20 bg-gradient-to-br from-gray-900 to-blue-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Cutting-Edge Legal Technology
-            </h2>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-              Experience the future of legal services with our innovative tools and AI-powered solutions.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20"
-            >
-              <div className="flex items-center mb-4">
-                <Brain className="w-8 h-8 text-teal-300 mr-3" />
-                <h3 className="text-xl font-bold">AI Legal Assistant</h3>
-              </div>
-              <p className="text-blue-100 mb-4">
-                Get instant answers to legal questions with our AI-powered assistant available 24/7.
-              </p>
-              <div className="flex items-center text-teal-300">
-                <Zap className="w-4 h-4 mr-2" />
-                <span className="text-sm">Powered by Advanced AI</span>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20"
-            >
-              <div className="flex items-center mb-4">
-                <Calendar className="w-8 h-8 text-teal-300 mr-3" />
-                <h3 className="text-xl font-bold">Smart Scheduling</h3>
-              </div>
-              <p className="text-blue-100 mb-4">
-                Intelligent appointment booking that adapts to your needs and Tim's availability.
-              </p>
-              <div className="flex items-center text-teal-300">
-                <Zap className="w-4 h-4 mr-2" />
-                <span className="text-sm">Real-time Availability</span>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true }}
-              className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20"
-            >
-              <div className="flex items-center mb-4">
-                <FileText className="w-8 h-8 text-teal-300 mr-3" />
-                <h3 className="text-xl font-bold">Document Generator</h3>
-              </div>
-              <p className="text-blue-100 mb-4">
-                Generate customized legal documents and templates tailored to your business needs.
-              </p>
-              <div className="flex items-center text-teal-300">
-                <Zap className="w-4 h-4 mr-2" />
-                <span className="text-sm">Instant Generation</span>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Interactive Tools Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
-              Interactive Legal Tools
-            </h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Explore our suite of interactive tools designed to streamline your legal experience.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-            <SmartScheduler />
-            <DocumentGenerator />
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <LegalNewsFeed />
-            <LegalAssessment />
-          </div>
-        </div>
-      </section>
-
       {/* Resources Section */}
       <section id="resources" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -623,9 +502,6 @@ const App = () => {
           </div>
         </div>
       </footer>
-
-      {/* AI Legal Assistant */}
-      <AILegalAssistant />
 
       {/* Scroll to Top Button */}
       <AnimatePresence>
