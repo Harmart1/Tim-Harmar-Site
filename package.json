@@ -1,7 +1,6 @@
 {
   "name": "tim-harmar-legal",
   "private": true,
-  "homepage": "https://harmart1.github.io/Tim-Harmar-Site/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
